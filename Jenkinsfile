@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Git checkout"
                 sh 'git --version'
-                git branch: 'ansible', url: 'https://github.com/helijunky/ci-cd-test.git'
+                git branch: 'ansible', url: 'https://github.com/anmargal/ci-cd-test.git'
             }
         }
         stage('Execute ansible playbook') {
